@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../img/favicon-16x16.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style-quiz.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="home-box custom-box" >
+        <h1>Instruçôes</h1>
+        <p>Total de questões a serem resolvidas: <span class="total-question">5</span></p>
+        <button  type="button" class="btn">Iniciar Quiz</button>
+    </div>
+</body>
+<script>
+    const btn = document.querySelector('.btn')
+    btn.addEventListener("click", event => {
+        location.href = "quiz.html"
+    })
+</script>
+</html>

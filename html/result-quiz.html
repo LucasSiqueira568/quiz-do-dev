@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../img/favicon-16x16.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/result-quiz.css">
+    <title>Resultado</title>
+</head>
+<body>
+    <div class="result-box custom-box">
+        <h1>Resultado do Quiz</h1>
+        <table>
+            <tr>
+                <td>Total de questôes</td>
+                <td><span class="total-question">5</span></td>
+            </tr>
+            <tr>
+                <td>Attempt</td>
+                <td><span class="total-attempt">4</span></td>
+            </tr>
+            <tr>
+                <td>Coretas</td>
+                <td><span class="total-question">3</span></td>
+            </tr>
+            <tr>
+                <td>Erradas</td>
+                <td><span class="total-wrong">1</span></td>
+            </tr>
+            <tr>
+                <td>Porcentagem</td>
+                <td><span class="total-porcentagem">60.00%</span></td>
+            </tr>
+            <tr>
+                <td>Pontuação Total</td>
+                <td><span class="total-score">3 / 5</span></td>
+            </tr>
+        </table>
+        <button type="button" class="btn">Jogar novamente</button>
+        <button type="button" class="btn">Voltar a Home</button>
+    </div>
+</body>
+<script>
+    const btn = document.querySelector('.btn')
+    btn.addEventListener("click", event => {
+        location.href = "login-quiz.html"
+    })
+</script>
+</html>
